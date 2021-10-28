@@ -1,10 +1,22 @@
-//Importando todos los estilos
-
-@import 'homeDesktop';
-
-
 // Estilos generales de la pagina
 body{
     margin: 0px;
     background-color: #DADADA;
 }
+
+main#cotizador{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+//Importando todos los estilos
+
+//Home Desktop 
+@import 'homeDesktop';
+
+//Modulo de datos de las posiciones
+@import 'datosPosiciones';
