@@ -8,6 +8,7 @@ $colorLazyload: #c00d0d;
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -35,4 +36,39 @@ $colorLazyload: #c00d0d;
                 }
 
         }
+}
+
+.nombre-lazyload::before {
+    content: "LL";
+}
+
+.cont-textos-lazyload{
+    width: 100%;
+    height: 20px;
+    top: -20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    z-index: 1000;
+
+    .texto-lazyload{
+        width: 100%;
+        height: 20px;
+        position: relative;
+
+
+        h3{
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            color:$colorLazyload ;
+            font-weight: 700;
+            margin: 0px 10px;
+            text-align: right;
+            text-transform: uppercase;
+        }
+
+    }
 }
