@@ -805,6 +805,19 @@ header nav {
   height: 200px;
   margin: 10px;
   background-color: #FFDD08;
+  position: fixed;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.cont-hoja .caja-0-suelta {
+  width: 110px;
+  height: 200px;
+  margin: 10px;
+  background-color: #FFDD08;
+  position: none;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 
 .cont-hoja .caja-1 {

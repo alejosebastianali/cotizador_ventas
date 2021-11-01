@@ -548,12 +548,22 @@ header{
             background-color:$cajaPublicidad;
         }
 
-
         .caja-0{
             width: 110px;
             height: 200px;
             margin: 10px;
             background-color: $cajaPublicidad;
+            position: fixed;
+            transition: all 1s ease-out;
+        }
+
+        .caja-0-suelta{
+            width: 110px;
+            height: 200px;
+            margin: 10px;
+            background-color: $cajaPublicidad;
+            position: none;
+            transition: all 1s ease-out;
         }
 
         .caja-1{
