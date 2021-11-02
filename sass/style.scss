@@ -11,12 +11,16 @@ main#cotizador{
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
+    justify-content: space-between
 }
 
 //Importando todos los estilos
 
 //Home Desktop 
 @import 'homeDesktop';
+@import 'subhomeDesktop';
+@import 'notaDesktop';
+
 
 //Modulo de datos de las posiciones
 @import 'textosCajas';
