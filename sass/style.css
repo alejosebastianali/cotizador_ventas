@@ -1425,7 +1425,7 @@ header nav {
   width: 110px;
   height: 90px;
   margin: 10px;
-  background-image: url(/img/nota_desktop.svg);
+  background-image: url(../img/nota_desktop.svg);
   background-repeat: no-repeat;
 }
 
@@ -1433,7 +1433,7 @@ header nav {
   width: 370px;
   height: 45px;
   margin: 10px;
-  background-image: url(/img/mas_notas_desktop.svg);
+  background-image: url(../img/mas_notas_desktop.svg);
   background-repeat: no-repeat;
 }
 
