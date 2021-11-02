@@ -1085,7 +1085,7 @@ header nav {
   width: 110px;
   height: 90px;
   margin: 10px;
-  background-image: url(/img/nota_desktop.svg);
+  background-image: url(../img/nota_desktop.svg);
   background-repeat: no-repeat;
 }
 
@@ -1107,7 +1107,7 @@ header nav {
   width: 370px;
   height: 170px;
   margin: 10px;
-  background-image: url(/img/carrusel_desktop.svg);
+  background-image: url(../img/carrusel_desktop.svg);
   background-repeat: no-repeat;
 }
 
@@ -1115,7 +1115,7 @@ header nav {
   width: 110px;
   height: 300px;
   margin: 10px;
-  background-image: url(/img/mas_leida_desktop.svg);
+  background-image: url(../img/mas_leida_desktop.svg);
   background-repeat: no-repeat;
 }
 
@@ -1455,7 +1455,7 @@ header nav {
   width: 110px;
   height: 300px;
   margin: 10px;
-  background-image: url(/img/mas_leida_desktop.svg);
+  background-image: url(../img/mas_leida_desktop.svg);
   background-repeat: no-repeat;
 }
 
@@ -1463,7 +1463,7 @@ header nav {
   width: 370px;
   height: 100px;
   margin: 10px;
-  background-image: url(/img/titulo_nota_desktop.svg);
+  background-image: url(../img/titulo_nota_desktop.svg);
   background-repeat: no-repeat;
 }
 
@@ -1471,7 +1471,7 @@ header nav {
   width: 240px;
   height: 25px;
   margin: 10px;
-  background-image: url(/img/autor_nota_desktop.svg);
+  background-image: url(../img/autor_nota_desktop.svg);
   background-repeat: no-repeat;
 }
 
@@ -1479,7 +1479,7 @@ header nav {
   width: 240px;
   height: 95px;
   margin: 10px;
-  background-image: url(/img/parrafo_nota_desktop.svg);
+  background-image: url(../img/parrafo_nota_desktop.svg);
   background-repeat: no-repeat;
 }
 
@@ -1493,7 +1493,7 @@ header nav {
   width: 370px;
   height: 14px;
   margin: 10px;
-  background-image: url(/img/epigrafe_nota_desktop.svg);
+  background-image: url(../img/epigrafe_nota_desktop.svg);
   background-repeat: no-repeat;
 }
 
@@ -1501,7 +1501,7 @@ header nav {
   width: 240px;
   height: 145px;
   margin: 10px;
-  background-image: url(/img/fin_nota_desktop.svg);
+  background-image: url(../img/fin_nota_desktop.svg);
   background-repeat: no-repeat;
 }
 
@@ -1509,7 +1509,7 @@ header nav {
   width: 240px;
   height: 220px;
   margin: 10px;
-  background-image: url(/img/comentarios_nota_desktop.svg);
+  background-image: url(../img/comentarios_nota_desktop.svg);
   background-repeat: no-repeat;
 }
 
