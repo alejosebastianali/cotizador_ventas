@@ -6,21 +6,12 @@ $cajaVacia: #B3B4B7;
 $colorcabeceraHoja: #BDBCBC;
 $colorNavbar: #585857;
 $colorSeccion: #939394;
-
+$colorClarin:#D90E22;
 
 //Estilos
 
-header{
-
-    nav{
-        width: 100%;
-        height: 50px;
-        background-color:$colorNavbar ;
-    }
-}
-
 .cont-hoja{
-    width: 540px;
+    width: 100%;
     height: auto;
     padding: 0px;
     box-sizing: border-box;
@@ -33,15 +24,15 @@ header{
         }
 
         .hoja{
-            width: 540px;
-            padding: 10px;
+            width: 100%;
+            padding: 1%;
             height: auto;
             box-sizing: border-box;
 
             .cont-logo{
                 height: 50px;
                 display: flex;
-                justify-content: left;
+                justify-content: space-between;
                 align-items: center;
                 align-content: center;
                 padding: 10px;
@@ -49,17 +40,30 @@ header{
                     img{
                         width: auto;
                         height: 20px;
+                        cursor: pointer;
                     }
 
                     .texto-seccion{
                         h1{
                             font-family: Arial, Helvetica, sans-serif ;
-                            font-size: 14px ;
+                            font-size: 16px ;
+                            font-weight: 300;
                             color:$colorSeccion ;
-                            margin: 0px 10px;
+                            margin: 5px 0px 0px 10px;
                         }
                     }
 
+            }
+
+            .cont-moculo-00{
+                width: 100%;
+                height: auto;
+                margin: 0px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
             }
 
             .cont-modulo-01{
@@ -69,6 +73,22 @@ header{
                 padding: 0px;
                 margin: 0px;
                 flex-direction: row;
+
+                    .modulo-01-a{
+                        width: 50%;
+                        margin: 10px 1%;
+                    }
+
+                    .modulo-01-b{
+                        width: 25%;
+                        margin: 10px 1%;
+
+                    }
+
+                    .modulo-01-c{
+                        width: 25%;
+                        margin: 10px 1%;
+                    }
             }
 
             .cont-modulo-02{
@@ -80,33 +100,26 @@ header{
                 flex-direction: row;
 
                     .modulo-02-a{
-                        width: 100%;
-                        padding: 0px;
+                        width:50%;
+                        height:auto;
+                        margin: 10px 1%;
                         display: flex;
-                        flex-direction: column;
+                        flex-direction: row;
+                        flex-wrap: wrap;
                         justify-content: space-between;
-
-                        .modulo-02-a-columna{
-                            width: 100%;
-                            height: auto;
-                            display: flex;
-                            padding: 0px;
-                            margin: 0px;
-                            flex-direction: row;
-                        }
-
                     }
 
                     .modulo-02-b{
-                        width: 100%;
-                        height: auto;
-                        padding: 0px;
+                        width:25%;
+                        height:auto;
+                        margin: 10px 1%;
+
                     }
 
                     .modulo-02-c{
-                        width: 100%;
-                        height: auto;
-                        padding: 0px;
+                        width:25%;
+                        height:auto;
+                        margin: 10px 1%;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
@@ -123,22 +136,40 @@ header{
                 flex-direction: row;
                 
                 .modulo-03-a{
-                    width: 260px;
+                    width: 25%;
                     height: auto;
-                    padding: 0px;
+                    margin: 10px 1%;
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     flex-wrap: wrap;
                 }
 
-                    .modulo-03-b{
-                        width: 260px;
-                        height: auto;
-                        padding: 0px;
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                    }
+                .modulo-03-b{
+                    width: 25%;
+                    height: auto;
+                    margin: 10px 1% ;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+
+                .modulo-03-c{
+                    width: 25%;
+                    height: auto;
+                    margin: 10px 1%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+
+                .modulo-03-d{
+                    width: 25%;
+                    height: auto;
+                    margin: 10px 1%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
             }
 
             .cont-modulo-04{
@@ -148,6 +179,22 @@ header{
                 padding: 0px;
                 margin: 0px;
                 flex-direction: row;
+
+                    .modulo-04-a{
+                        width: 50%;
+                        margin: 0px 1%;
+                    }
+
+                    .modulo-04-b{
+                        width: 24%;
+                        margin: 0px 1%;
+
+                    }
+
+                    .modulo-04-c{
+                        width: 24%;
+                        margin: 0px 1%;
+                    }
             }
 
             .cont-modulo-05{
@@ -155,27 +202,44 @@ header{
                 height: auto;
                 display: flex;
                 padding: 0px;
-                margin: 0px;
+                margin: 10px 0px 0px 0px;
                 flex-direction: row;
-
+                
                 .modulo-05-a{
-                    width: 260px;
+                    width: 26%;
                     height: auto;
-                    padding: 0px;
+                    margin: 10px 0px 10px 1%;
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     flex-wrap: wrap;
                 }
 
                 .modulo-05-b{
-                    width: 260px;
+                    width: 26%;
                     height: auto;
-                    padding: 0px;
+                    margin: 10px 1% 0px 0px;
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     flex-wrap: wrap;
                 }
 
+                .modulo-05-c{
+                    width: 25%;
+                    height: auto;
+                    margin: 10px 1%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+
+                .modulo-05-d{
+                    width: 25%;
+                    height: auto;
+                    margin: 10px 1%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
             }
 
             .cont-modulo-06{
@@ -185,6 +249,22 @@ header{
                 padding: 0px;
                 margin: 0px;
                 flex-direction: row;
+
+                .modulo-06-a{
+                    width: 24%;
+                    margin: 0px 1%;
+                }
+
+                .modulo-06-b{
+                    width: 24%;
+                    margin: 0px 1%;
+                }
+
+                .modulo-06-c{
+                    width: 50%;
+                    margin: 0px 1%;
+                }
+
             }
 
             .cont-modulo-07{
@@ -192,27 +272,44 @@ header{
                 height: auto;
                 display: flex;
                 padding: 0px;
-                margin: 0px;
+                margin: 10px 0px 0px 0px;
                 flex-direction: row;
-
+                
                 .modulo-07-a{
-                    width: 260px;
+                    width: 26%;
                     height: auto;
-                    padding: 0px;
+                    margin: 10px 0px 0px 1%;
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     flex-wrap: wrap;
                 }
 
                 .modulo-07-b{
-                    width: 260px;
+                    width: 26%;
                     height: auto;
-                    padding: 0px;
+                    margin: 10px 1% 0px 0px;
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     flex-wrap: wrap;
                 }
 
+                .modulo-07-c{
+                    width: 25%;
+                    height: auto;
+                    margin: 10px 1% 0px 1%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+
+                .modulo-07-d{
+                    width: 25%;
+                    height: auto;
+                    margin: 10px 1% 0px 1%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
             }
 
             .cont-modulo-08{
@@ -231,25 +328,42 @@ header{
                 padding: 0px;
                 margin: 0px;
                 flex-direction: row;
-
+                
                 .modulo-09-a{
-                    width: 260px;
+                    width: 26%;
                     height: auto;
-                    padding: 0px;
+                    margin: 10px 0px 0px 1%;
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     flex-wrap: wrap;
                 }
 
                 .modulo-09-b{
-                    width: 260px;
+                    width: 26%;
                     height: auto;
-                    padding: 0px;
+                    margin: 10px 1% 0px 0px;
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     flex-wrap: wrap;
                 }
 
+                .modulo-09-c{
+                    width: 25%;
+                    height: auto;
+                    margin: 10px 1% 0px 1%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+
+                .modulo-09-d{
+                    width: 25%;
+                    height: auto;
+                    margin: 10px 1% 0px 1%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
             }
 
             .cont-modulo-10{
@@ -268,23 +382,42 @@ header{
                 padding: 0px;
                 margin: 0px;
                 flex-direction: row;
+                
+                .modulo-11-a{
+                    width: 25%;
+                    height: auto;
+                    margin: 10px 1%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
 
-                    .modulo-11-a{
-                        width: 260px;
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                    }
+                .modulo-11-b{
+                    width: 25%;
+                    height: auto;
+                    margin: 10px 1% ;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
 
-                    .modulo-11-b{
-                        display: flex;
-                        flex-direction: column;
-                    }
+                .modulo-11-c{
+                    width: 25%;
+                    height: auto;
+                    margin: 10px 1%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
 
-                    .modulo-11-c{
-                        display: flex;
-                        flex-direction: column;
-                    }
+                .modulo-11-d{
+                    width: 25%;
+                    height: auto;
+                    margin: 10px 1%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
             }
 
             .cont-modulo-12{
@@ -294,23 +427,42 @@ header{
                 padding: 0px;
                 margin: 0px;
                 flex-direction: row;
+                
+                .modulo-12-a{
+                    width: 25%;
+                    height: auto;
+                    margin: 10px 1%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
 
-                    .modulo-12-a{
-                        width: 260px;
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                    }
+                .modulo-12-b{
+                    width: 25%;
+                    height: auto;
+                    margin: 10px 1% ;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
 
-                    .modulo-12-b{
-                        display: flex;
-                        flex-direction: column;
-                    }
+                .modulo-12-c{
+                    width: 25%;
+                    height: auto;
+                    margin: 10px 1%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
 
-                    .modulo-12-c{
-                        display: flex;
-                        flex-direction: column;
-                    }
+                .modulo-12-d{
+                    width: 25%;
+                    height: auto;
+                    margin: 10px 1%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
             }
 
             .cont-modulo-13{
@@ -320,7 +472,23 @@ header{
                 padding: 0px;
                 margin: 0px;
                 flex-direction: row;
+
+                    .modulo-13-a{
+                        width: 50%;
+                        margin: 0px 1% 10px 1%;
+                    }
+
+                    .modulo-13-b{
+                        width: 24%;
+                        margin: 0px 1% 10px 1%;
+                    }
+
+                    .modulo-13-c{
+                        width: 24%;
+                        margin: 0px 1% 10px 1%;
+                    }
             }
+
 
             .cont-modulo-14{
                 width: 100%;
@@ -329,34 +497,42 @@ header{
                 padding: 0px;
                 margin: 0px;
                 flex-direction: row;
-
+                
                 .modulo-14-a{
-                    width: 260px;
+                    width: 26%;
                     height: auto;
-                    padding: 0px;
+                    margin: 10px 0px 0px 1%;
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     flex-wrap: wrap;
                 }
 
                 .modulo-14-b{
-                    width: 100%;
+                    width: 26%;
                     height: auto;
-                    padding: 0px;
+                    margin: 10px 1% 0px 0px;
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     flex-wrap: wrap;
                 }
 
-                .modulo-14-b{
-                    width: 100%;
+                .modulo-14-c{
+                    width: 25%;
                     height: auto;
-                    padding: 0px;
+                    margin: 10px 1% 0px 1%;
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     flex-wrap: wrap;
                 }
 
+                .modulo-14-d{
+                    width: 25%;
+                    height: auto;
+                    margin: 10px 1% 0px 1%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
             }
 
             .cont-modulo-15{
@@ -366,23 +542,42 @@ header{
                 padding: 0px;
                 margin: 0px;
                 flex-direction: row;
+                
+                .modulo-15-a{
+                    width: 26%;
+                    height: auto;
+                    margin: 10px 0px 0px 1%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
 
-                    .modulo-15-a{
-                        width: 260px;
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                    }
+                .modulo-15-b{
+                    width: 26%;
+                    height: auto;
+                    margin: 10px 1% 0px 0px;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
 
-                    .modulo-15-b{
-                        display: flex;
-                        flex-direction: column;
-                    }
+                .modulo-15-c{
+                    width: 25%;
+                    height: auto;
+                    margin: 10px 1% 0px 1%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
 
-                    .modulo-15-c{
-                        display: flex;
-                        flex-direction: column;
-                    }
+                .modulo-15-d{
+                    width: 25%;
+                    height: auto;
+                    margin: 10px 1% 0px 1%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
             }
 
             .cont-modulo-16{
@@ -392,7 +587,23 @@ header{
                 padding: 0px;
                 margin: 0px;
                 flex-direction: row;
+
+                    .modulo-16-a{
+                        width: 50%;
+                        margin: 10px 1% 10px 1%;
+                    }
+
+                    .modulo-16-b{
+                        width: 24%;
+                        margin: 10px 1% 10px 1%;
+                    }
+
+                    .modulo-16-c{
+                        width: 24%;
+                        margin: 10px 1% 10px 1%;
+                    }
             }
+
 
             .cont-modulo-17{
                 width: 100%;
@@ -401,37 +612,6 @@ header{
                 padding: 0px;
                 margin: 0px;
                 flex-direction: row;
-                flex-wrap: wrap;
-            }
-
-            .cont-modulo-18{
-                width: 100%;
-                height: auto;
-                display: flex;
-                padding: 0px;
-                margin: 0px;
-                flex-direction: row;
-            }
-
-            .cont-modulo-19{
-                width: 100%;
-                height: auto;
-                display: flex;
-                padding: 0px;
-                margin: 0px;
-                flex-direction: row;
-                flex-wrap: wrap;
-            }
-
-            .cont-modulo-20{
-                width:500px;
-                height: auto;
-                display: flex;
-                padding: 0px;
-                margin: 0px 10px;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-between;
             }
 
         }
@@ -488,16 +668,101 @@ header{
 
 
         .caja-simple{
-            width: 110px;
+            width: 25%;
             height: 90px;
-            margin: 10px;
+            margin: 10px 1%;
+            background-color: $cajaVacia;
+        }
+
+        .caja-25p{
+            width: 25%;
+            height: 90px;
+            margin: 0.5%;
             background-color: $cajaVacia;
         }
 
         .caja-doble{
-            width: 240px;
+            width: 50%;
             height: 90px;
-            margin: 10px;
+            margin: 1%;
+            background-color: $cajaVacia;
+        }
+
+        .caja-media-a{
+            width: 48%;
+            height: 90px;
+            margin: 10px 0px;
+            background-color: $cajaVacia;
+            box-sizing: border-box;
+        }
+
+        .caja-media-b{
+            width: 48%;
+            height: 90px;
+            margin: 0px 0px 10px 0px;
+            background-color: $cajaVacia;
+            box-sizing: border-box;
+        }
+
+        .caja-media-full{
+            width: 50%;
+            height: 90px;
+            margin: 1% 0px;
+            background-color: $cajaVacia;
+            box-sizing: border-box;
+        }
+
+        .caja-llena{
+            width: 100%;
+            height: 90px;
+            margin: 0px;
+            background-color: $cajaVacia;
+            box-sizing: border-box;
+        }
+
+        .caja-llena-a{
+            width: 100%;
+            height: 90px;
+            margin: 0px 0px 10px 0px;
+            background-color: $cajaVacia;
+            box-sizing: border-box;
+        }
+
+        .caja-llena-b{
+            width: 100%;
+            height: 90px;
+            margin: 0px 0px 10px 0px;
+            background-color: $cajaVacia;
+            box-sizing: border-box;
+        }
+
+        .caja-llena-c{
+            width: 100%;
+            height: 90px;
+            margin: 10px 0px 10px 0px;
+            background-color: $cajaVacia;
+            box-sizing: border-box;
+        }
+
+        .caja-llena-d{
+            width: 100%;
+            height:100px;
+            background-color: $cajaVacia;
+            box-sizing: border-box;
+        }
+
+        .caja-llena-e{
+            width: 100%;
+            height:100px;
+            padding:  0px;
+            background-color: $cajaVacia;
+            box-sizing: border-box;
+        }
+
+        .caja-100p{
+            width: 97%;
+            height: 90px;
+            margin: 1%;
             background-color: $cajaVacia;
         }
 
@@ -521,112 +786,110 @@ header{
             margin: 10px;
         }
 
+        .horizontal-full{
+            width: 98%;
+            height: 270px;
+            margin: 1%;
+            background-color:$cajaVacia;
+        }
+
         .horizontal-1{
-            width: 500px;
+            width: 98%;
             height: 45px;
-            margin: 10px;
+            margin: 1%;
             background-color:$cajaPublicidad;
         }
 
         .horizontal-2{
-            width: 500px;
+            width: 98%;
             height: 135px;
-            margin: 10px;
+            margin: 10px 1% 10px 1%;
             background-color:$cajaPublicidad;
         }
 
         .horizontal-3{
-            width: 500px;
+            width: 98%;
             height: 135px;
-            margin: 10px;
+            margin: 0px 1% 10px 1%;
             background-color:$cajaPublicidad;
         }
 
         .horizontal-4{
-            width: 500px;
+            width: 98%;
             height: 135px;
-            margin: 10px;
+            margin: 10px 1%;
             background-color:$cajaPublicidad;
         }
 
         .horizontal-5{
-            width: 500px;
+            width: 98%;
             height: 135px;
-            margin: 10px;
+            margin: 0px 1% 10px 1%;
             background-color:$cajaPublicidad;
         }
 
         .caja-0{
-            width: 110px;
-            height: 200px;
-            margin: 10px;
+            width: 100%;
+            height: 50%;
+            margin:0px;
             background-color: $cajaPublicidad;
-            position: fixed;
-            transition: all 1s ease-out;
+            position: relative;
         }
 
-        .caja-0-suelta{
-            width: 110px;
-            height: 200px;
-            margin: 10px;
-            background-color: $cajaPublicidad;
-            position: none;
-            transition: all 1s ease-out;
-        }
 
         .caja-1{
-            width: 110px;
+            width: 100%;
             height: 90px;
-            margin: 10px;
+            margin: 10px 0px 10px 0px;
             background-color: $cajaPublicidad;
         }
 
         .caja-2{
-            width: 110px;
+            width: 100%;
             height: 90px;
-            margin: 10px;
+            margin: 0px;
             background-color: $cajaPublicidad;
         }
 
         .caja-3{
-            width: 110px;
+            width: 100%;
             height: 90px;
-            margin: 10px;
+            margin: 0px;
             background-color: $cajaPublicidad;
         }
 
         .caja-4{
-            width: 110px;
-            height: 200px;
-            margin: 10px;
+            width: 100%;
+            height: 100%;
+            margin: 0px 0px 10px 0px;
             background-color: $cajaPublicidad;
         }
 
         .caja-5{
-            width: 110px;
-            height: 200px;
-            margin: 10px;
+            width: 100%;
+            height: 100%;
+            margin: 0px 0px 10px 0px;
             background-color: $cajaPublicidad;
         }
 
         .caja-6{
-            width: 110px;
+            width: 48%;
             height: 90px;
-            margin: 10px;
+            margin: 10px 0px 0px 0px;
             background-color: $cajaPublicidad;
         }
 
         .caja-7{
-            width: 110px;
-            height: 200px;
-            margin: 10px;
+            width: 100%;
+            height: 100%;
+            margin: 0px 0px 10px 0px;
             background-color: $cajaPublicidad;
         }
 
         .caja-8{
-            width: 110px;
-            height: 200px;
-            margin: 10px;
+            width: 100%;
+            height: 100%;
+            margin: 0px 0px 10px 0px;
             background-color: $cajaPublicidad;
         }
 

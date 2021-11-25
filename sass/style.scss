@@ -1,12 +1,139 @@
 // Estilos generales de la pagina
+$colorClarin:#D90E22;
+$colorSeleccionador:#ffffff;
+
+
 body{
     margin: 0px;
     background-color: #DADADA;
 }
 
-main#cotizador{
+header{
+
+    nav#dispositivos{
+        width: 2560px;
+        height: 50px;
+        background-color:$colorClarin ;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+
+            img{
+                width: auto;
+                height:20px ;
+            }
+    }
+
+    .cont-btn-selec{
+        width: 170px;
+        height: 50px;
+        background-color:#1b1717;
+        margin-top: -25px;
+        padding: 5px;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        border-top-left-radius:0px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius:0px;
+        box-sizing: border-box;
+
+        .btn-seleccionador{
+            margin: 0px 3px;
+            height: 15px;
+
+            h5{
+                font-family: 'Roboto', sans-serif;
+                font-size: 10px;
+                color: $colorSeleccionador;
+                font-weight: 500;  
+                margin: 0px;              
+            }
+
+            a{
+                text-decoration: none;
+            }
+        }
+
+        .btn-fondo{
+            color: red;
+        }
+
+
+    }
+}
+
+header{
+
+    nav#dispositivosTriptico{
+        width: 100%;
+        height: 50px;
+        background-color:$colorClarin ;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+
+            img{
+                width: auto;
+                height:20px ;
+            }
+    }
+}
+
+main#cotizadorGeneral{
+    width: 2500px;
+    height: auto;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+main#cotizadorMobile{
+    width: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.homeDesktop{
+    width: 20%;
+}
+
+main#tripticoDesktop{
     width: 100%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+main#tripticoMobile{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 50px;
     box-sizing: border-box;
     display: flex;
@@ -18,8 +145,6 @@ main#cotizador{
 
 //Home Desktop 
 @import 'homeDesktop';
-@import 'subhomeDesktop';
-@import 'notaDesktop';
 
 
 //Modulo de datos de las posiciones
