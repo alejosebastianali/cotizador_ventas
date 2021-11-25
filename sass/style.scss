@@ -90,44 +90,17 @@ header{
     }
 }
 
-main#cotizadorGeneral{
-    width: 2500px;
-    height: auto;
-    padding: 30px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    box-sizing: border-box;
-}
-
-main#cotizadorMobile{
-    width: 800px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
+main#cotizadorGeneral {
+	width: 100vw;
+	height: calc(100vh - 50px);
+	overflow: auto;
     padding: 50px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between
 }
 
 .homeDesktop{
     width: 20%;
 }
 
-main#tripticoDesktop{
-    width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between
-}
 
 main#tripticoMobile{
     width: 100%;
@@ -145,7 +118,6 @@ main#tripticoMobile{
 
 //Home Desktop 
 @import 'homeDesktop';
-
 
 //Modulo de datos de las posiciones
 @import 'textosCajas';

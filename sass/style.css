@@ -109,66 +109,14 @@ header nav#dispositivosTriptico img {
 }
 
 main#cotizadorGeneral {
-  width: 2500px;
-  height: auto;
-  padding: 30px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  box-sizing: border-box;
-}
-
-main#cotizadorMobile {
-  width: 800px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100vw;
+  height: calc(100vh - 50px);
+  overflow: auto;
   padding: 50px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .homeDesktop {
   width: 20%;
-}
-
-main#tripticoDesktop {
-  width: 100%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 50px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 main#tripticoMobile {
@@ -189,6 +137,64 @@ main#tripticoMobile {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.btn-zoom {
+  width: 140px;
+  height: 50px;
+  background-color: #d90e22;
+  color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  position: fixed;
+  border-radius: 0px 8px 8px 0px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.btn-zoom button {
+  width: 45px;
+  height: 50px;
+  background-color: #d90e22;
+  border: none;
+}
+
+.btn-zoom button:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  background-color: #dd0f24;
+}
+
+.btn-zoom button img {
+  width: 40%;
+}
+
+#scroll-container {
+  width: 100vw;
+  height: auto;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .cont-hoja {
