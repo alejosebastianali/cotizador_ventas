@@ -1,0 +1,172 @@
+//Colores
+
+$colorFondoDatos: #E50051;
+$colorBordeDatos: #585857;
+$colorTextoDatos: #3C3C3B;
+$colorSeparacion: #DADADA;
+$colorBajo: #E52521;
+$colorMedio: #F9EA31;
+$colorAlto: #8EC045;
+$colorBarra: #F3F3F4;
+
+//Tamaños
+
+$size10: 10%;
+$size20: 20%;
+$size30: 30%;
+$size40: 40%;
+$size50: 50%;
+$size60: 60%;
+$size70: 70%;
+$size80: 80%;
+$size90: 90%;
+$size100: 100%;
+
+
+
+//Trazos
+$trazoSeparacion: 1px;
+
+
+section#datosPosiciones{
+    display: flex;
+    flex-direction: column;
+    display: block;
+}
+
+.cont-datos-posiciones{
+    width: 110px;
+    height:100px;
+    border: solid 3px $colorBordeDatos;
+    background-color: #ffffff;
+    margin: 0px 20px 20px 20px ;
+    display: flex;
+    flex-direction: column;
+}
+
+.datos-posicion{
+    padding: 5px 10px;
+    box-sizing: border-box;
+
+        h3{
+            font-family: Arial, Helvetica, sans-serif ;
+            font-size: 16px ;
+            color: $colorTextoDatos ;
+            text-align: center;
+            margin: 0px ;
+            padding: 0px;
+            border-bottom: solid $colorSeparacion $trazoSeparacion ;
+        }
+}
+
+.nombre-posicion::before {
+    content: "";
+}
+
+.datos-impresiones{
+    padding: 5px 10px;
+    box-sizing: border-box;
+
+    h4{
+        font-family: Arial, Helvetica, sans-serif ;
+        font-size: 12px ;
+        color: $colorTextoDatos ;
+        text-align: center;
+        font-style: italic;
+        margin: 0px ;
+        padding: 0px;
+        border-bottom: solid $colorSeparacion $trazoSeparacion ;
+    }
+}
+
+.nombre-impresiones::before {
+    content: " Imp";
+}
+
+.datos-vw{
+    padding: 5px 10px;
+    box-sizing: border-box;
+
+    h5{
+        font-family: Arial, Helvetica, sans-serif ;
+        font-size: 16px ;
+        color: $colorTextoDatos ;
+        font-weight: bold;
+        text-align: center;
+        margin: 0px ;
+        padding: 0px;
+        border-bottom: solid $colorSeparacion $trazoSeparacion ;
+    }
+}
+
+.nombre-vw::before {
+    content: " %VW";
+}
+
+.datos-porcentaje{
+    width: 80%;
+    margin: 0px 10%;
+    height: 10px;
+    background-color: $colorBarra;
+    border-radius: 10px;
+
+    .relleno-porcentaje{
+        margin: 0%;
+        height: 10px;
+        background-color: blue;
+        border-radius: 10px;
+    }
+
+    .size-10{
+        width: $size10;
+    }
+
+    .size-20{
+        width: $size20;
+    }
+
+    .size-30{
+        width: $size30;
+    }
+
+    .size-40{
+        width: $size40;
+    }
+
+    .size-50{
+        width: $size50;
+    }
+
+    .size-60{
+        width: $size60;
+    }
+
+    .size-70{
+        width: $size70;
+    }
+
+    .size-80{
+        width: $size80;
+    }
+
+    .size-90{
+        width: $size90;
+    }
+
+    .size-100{
+        width: $size100;
+    }
+
+    .color-bajo{
+        background-color:$colorBajo ;
+    }
+
+    .color-medio{
+        background-color:$colorMedio ;
+    }
+
+    .color-alto{
+        background-color:$colorAlto ;
+    }
+    
+}
