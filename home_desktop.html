@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="sass/calculadora.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Rubik:wght@300;500;700&display=swap" rel="stylesheet">
@@ -24,11 +25,11 @@
 
                 <div class="btn-zoom">
                     <button id="btn-zoom-menos">
-                        <img src="./img/minus.png" />
+                        <img src="img/minus.png" />
                     </button>
                     <p class="btn-zoom-texto">Zoom</p>
                     <button id="btn-zoom-mas">
-                        <img src="./img/plus.png" />
+                        <img src="img/plus.png" />
                     </button>
                 </div>
             </header>
@@ -540,9 +541,398 @@
                 </section>
                 <!--FIN Home Desktop-->
 
+                <!--Calculadora Horizonal1-->
+                <section id="calculadoraHorizontal01" class="formato">
+                    <div class="informacion">
+                        <p class="formato-titulo">Flotante - 1</p>
+                        <div class="informacion-container">
+                            <div class="impresiones">
+                                <p class="info-titulo">Impresiones</p>
+                                <p class="info-text">99.999.999</p>
+                            </div>
+                            <div class="viewability">
+                                <p class="info-titulo">34% VW</p>
+                                <img class="vw-barra" src="img/barra.svg" />
+                            </div>
+                            <div class="tamaño">
+                                <p class="info-titulo">Tamaño</p>
+                                <p class="info-text">800x600 px</p>
+                            </div>
+                            <div class="tipos-formato">
+                                <p class="info-titulo">Tipos de formato</p>
+                                <p class="info-text">jpg, png, gif, HTML5</p>
+                            </div>
+                            <div class="mod-venta">
+                                <p class="info-titulo">Modalidad de Venta</p>
+                            </div>
+                            <div class="excepciones">
+                                <p class="info-titulo">Excepciones</p>
+                            </div>
+                            <div class="especificaciones">
+                                <p class="info-titulo">Especificaciones</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cotizador">
+                        <div class="cotizador-seccion1">
+                            <div class="cotizador-seccion1-img">
+                                <img src="img/diario.png" />
+                            </div>
+                            <div class="cotizador-seccion1-info">
+                                <div class="inner-form-group">
+                                    <div class="label-input">
+                                        <label id="time-label-vd" for="time-vd">Tiempo</label>
+                                        <input
+                                            class="form-element desactivado"
+                                            type="text"
+                                            name="time"
+                                            id="time-vd"
+                                            disabled
+                                            value="1 día"
+                                        />
+                                    </div>
+                                </div>
+    
+                                <div class="inner-form-group">
+                                    <span id="impresiones-totales-span"></span>
+                                    <div class="label-input">
+                                        <label id="imp-label-vd" for="imp-totales-vd"
+                                            >Impresiones Totales</label
+                                        >
+                                        <input
+                                            class="form-element desactivado"
+                                            type="text"
+                                            name="imp-totales-vd"
+                                            id="imp-totales-vd"
+                                            required
+                                            value="2.000.000"
+                                            disabled
+                                            onsubmit="return validarFormulario()"
+                                        />
+                                    </div>
+                                </div>
+    
+                                <div class="inner-form-group">
+                                    <span id="impresiones-vend-span"></span>
+                                    <div class="label-input">
+                                        <label id="imp-vend-label" for="imp-vend"
+                                            >Impresiones Vendibles</label
+                                        >
+                                        <input
+                                            class="form-element"
+                                            type="text"
+                                            name="imp-vend"
+                                            id="imp-vend"
+                                            required
+                                            onsubmit="return validarFormulario()"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="checkbox-container">
+                                    <div class="inner-form-group">
+                                        <div class="label-input">
+                                            <label id="viewability-label" for="viewability"
+                                                >Viewability</label
+                                            >
+                                            <input
+                                                class="checkbox-element"
+                                                type="checkbox"
+                                                name="viewability"
+                                                id="viewability"
+                                                required
+                                                onsubmit="return validarFormulario()"
+                                            />
+                                        </div>
+                                    </div>
+    
+                                    <div class="inner-form-group">
+                                        <div class="label-input">
+                                            <label id="blast-label" for="blast">Blast</label>
+                                            <input
+                                                class="checkbox-element"
+                                                type="checkbox"
+                                                name="blast"
+                                                id="blast"
+                                                required
+                                                onsubmit="return validarFormulario()"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cotizador-seccion2">
+                            <div class="cotizador-seccion2-info-a">
+                                <div class="inner-form-group">
+                                    <span id="cpm-tf-span-vd"></span>
+                                    <div class="label-input">
+                                        <label id="cpm-label" for="cpm-tf">CPM Tarifario</label>
+                                        <input
+                                            class="form-element desactivado"
+                                            type="text"
+                                            name="cpm-tf"
+                                            id="cpm-tf-vd"
+                                            required
+                                            disabled
+                                            value="$40"
+                                            onsubmit="return validarFormulario()"
+                                        />
+                                    </div>
+                                </div>
+    
+                                <div class="inner-form-group">
+                                    <span id="cpm-piso-span-vd"></span>
+                                    <div class="label-input">
+                                        <label id="cpm-label" for="cpm-piso">CPM Piso</label>
+                                        <input
+                                            class="form-element desactivado"
+                                            type="text"
+                                            name="cpm-piso"
+                                            id="cpm-piso-vd"
+                                            required
+                                            disabled
+                                            value="$35"
+                                            onsubmit="return validarFormulario()"
+                                        />
+                                    </div>
+                                </div>
+    
+                                <div class="inner-form-group">
+                                    <span id="cpm-libre-span-vd"></span>
+                                    <span id="cpm-libre-span-vd-war"></span>
+                                    <div class="label-input">
+                                        <label id="cpm-label" for="cpm-libre-vd">CPM Libre</label>
+                                        <input
+                                            class="form-element"
+                                            type="text"
+                                            name="cpm-libre"
+                                            id="cpm-libre-vd"
+                                            required
+                                            onsubmit="return validarFormulario()"
+                                        />
+                                    </div>
+                                </div>
+    
+                                <div class="inner-form-group">
+                                    <div class="label-input">
+                                        <label id="cpm-descuento-label" for="cpm-descuento-vd"
+                                            >Porcentaje</label
+                                        >
+                                        <input
+                                            class="form-element desactivado"
+                                            type="text"
+                                            name="cpm-descuento-vd"
+                                            id="cpm-descuento-vd"
+                                            disabled
+                                            onsubmit="return validarFormulario()"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cotizador-seccion2-info-b">
+                                <div class="inner-form-group inner-form-group-col2">
+                                    <div class="label-input">
+                                        <label id="res-tf-label" for="res-tf-vd">Resultado</label>
+                                        <input
+                                            class="form-element desactivado"
+                                            type="text"
+                                            name="res-tf-vd"
+                                            id="res-tf-vd"
+                                            disabled
+                                        />
+                                    </div>
+                                </div>
+    
+                                <div class="inner-form-group">
+                                    <div class="label-input">
+                                        <label id="res-piso-label" for="res-piso-vd">Resultado</label>
+                                        <input
+                                            class="form-element desactivado"
+                                            type="text"
+                                            name="res-piso-vd"
+                                            id="res-piso-vd"
+                                            disabled
+                                        />
+                                    </div>
+                                </div>
+    
+                                <div class="inner-form-group">
+                                    <div class="label-input">
+                                        <label id="res-label" for="res-vd">Resultado</label>
+                                        <input
+                                            class="form-element desactivado"
+                                            type="text"
+                                            name="res-vd"
+                                            id="res-vd"
+                                            disabled
+                                        />
+                                    </div>
+                                </div>
+    
+                                <div class="cotizador-seccion2-botones">
+                                    <div class="cotizador-seccion2-boton1">
+                                        <a class="submit" id="boton-calcular">
+                                            <img src="./img/play.svg" />
+                                        </a>
+                                        <p class="button-text">Calcular</p>
+                                    </div>
+                                    <div class="cotizador-seccion2-boton2">
+                                        <a class="reset" id="boton-reset">
+                                            <img src="./img/reset.svg" />
+                                        </a>
+                                        <p class="button-text">Reset</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cotizador-seccion3">
+                            <div class="cotizador-seccion3-info">
+                                <div class="inner-form-group">
+                                    <span id="porcentaje-descuento-span-vd"></span>
+                                    <div class="label-input">
+                                        <label id="cpm-label" for="porcentaje-descuento-vd"
+                                            >Porcentaje</label
+                                        >
+                                        <input
+                                            class="form-element"
+                                            type="text"
+                                            name="porcentaje-descuento"
+                                            id="porcentaje-descuento-vd"
+                                            onsubmit="return validarFormulario()"
+                                        />
+                                    </div>
+                                </div>
+    
+                                <div class="inner-form-group">
+                                    <div class="label-input">
+                                        <label id="res-desc-vd-label" for="res-desc-vd"
+                                            >Resultado con descuento</label
+                                        >
+                                        <input
+                                            class="form-element desactivado"
+                                            type="text"
+                                            name="res-desc-vd"
+                                            id="res-desc-vd"
+                                            disabled
+                                        />
+                                    </div>
+                                </div>
+    
+                                <div class="inner-form-group">
+                                    <span id="cpm-libre-span-vd"></span>
+                                    <div class="label-input">
+                                        <label id="cpm-label" for="cpm-desc-vd"
+                                            >CPM con descuento</label
+                                        >
+                                        <input
+                                            class="form-element desactivado"
+                                            type="text"
+                                            name="cpm-desc"
+                                            id="cpm-desc-vd"
+                                            disabled
+                                            onsubmit="return validarFormulario()"
+                                        />
+                                    </div>
+                                </div>
+    
+                                <div class="cotizador-seccion3-botones">
+                                    <div class="cotizador-seccion2-boton1">
+                                        <a class="submit" id="boton-calcular2">
+                                            <img src="img/play.svg" />
+                                        </a>
+                                        <p class="button-text">Calcular</p>
+                                    </div>
+                                    <div class="cotizador-seccion2-boton2">
+                                        <a class="reset" id="boton-reset2">
+                                            <img src="img/reset.svg" />
+                                        </a>
+                                        <p class="button-text">Reset</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cotizador-seccion4">
+                            <div class="cotizador-seccion4-info">
+                                <div class="inner-form-group">
+                                    <span id="presupuesto-span-vd"></span>
+                                    <div class="label-input">
+                                        <label id="presupuesto-label" for="presupuesto-vd"
+                                            >Presupuesto</label
+                                        >
+                                        <input
+                                            class="form-element"
+                                            type="text"
+                                            name="presupuesto"
+                                            id="presupuesto-vd"
+                                            onsubmit="return validarFormulario()"
+                                        />
+                                    </div>
+                                </div>
+    
+                                <div class="inner-form-group">
+                                    <span id="cpm-presupuesto-span-vd"></span>
+                                    <div class="label-input">
+                                        <label id="cpm-presupuesto-label" for="cpm-presupuesto-vd"
+                                            >CPM</label
+                                        >
+                                        <select
+                                            class="form-element"
+                                            type="text"
+                                            name="cpm-presupuesto-vd"
+                                            id="cpm-presupuesto-vd"
+                                            onsubmit="return mostrarSeleccionado()"
+                                        >
+                                            <option value="40">$40</option>
+                                            <option value="35">$35</option>
+                                        </select>
+                                    </div>
+                                </div>
+    
+                                <div class="inner-form-group">
+                                    <div class="label-input">
+                                        <label id="imp-presupuesto-vd-label" for="imp-presupuesto-vd"
+                                            >Impresiones</label
+                                        >
+                                        <input
+                                            class="form-element desactivado"
+                                            type="text"
+                                            name="imp-presupuesto-vd"
+                                            id="imp-presupuesto-vd"
+                                            disabled
+                                        />
+                                    </div>
+                                </div>
+    
+                                <div class="cotizador-seccion4-botones">
+                                    <div class="cotizador-seccion2-boton1">
+                                        <a class="submit" id="boton-calcular3">
+                                            <img src="img/play.svg" />
+                                        </a>
+                                        <p class="button-text">Calcular</p>
+                                    </div>
+                                    <div class="cotizador-seccion2-boton2">
+                                        <a class="reset" id="boton-reset3">
+                                            <img src="img/reset.svg" />
+                                        </a>
+                                        <p class="button-text">Reset</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--Fin Calculadora Horizontal1-->
+
             </div>
         </main>
+        
+        <!--Funciones Calculadora-->
+        <script src="sass/selectores.js"></script>
+        <script src="sass/calculadora.js"></script>
+        <script src="sass/inicio_calculadora.js"></script>
+        <!-- Fin Funciones Calculadora-->
 
+        <!--Funciones Zoom -->
         <script src="sass/zoom.js"></script>
 
 

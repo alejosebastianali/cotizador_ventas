@@ -1,0 +1,259 @@
+@font-face {
+	font-family: 'Antonio Bold';
+	src: url('fonts/antonio-bold-webfont.ttf');
+	font-weight: 700;
+}
+
+.formato {
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	width: 40%;
+}
+
+.informacion {
+	width: 30%;
+	font-family: 'Antonio Bold';
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 0.5rem;
+	padding: 0 0.5rem;
+}
+
+.formato-titulo {
+	font-size: 3rem;
+}
+
+.informacion-container {
+	background-color: #ffecb3;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.impresiones,
+.viewability,
+.tamaño,
+.tipos-formato,
+.mod-venta,
+.excepciones {
+	border-bottom: 0.1rem solid #1d1d1b;
+	width: 80%;
+}
+
+.impresiones,
+.viewability,
+.tamaño,
+.tipos-formato,
+.mod-venta,
+.excepciones,
+.especificaciones {
+	padding: 1.7rem 0;
+}
+
+.info-titulo {
+	font-size: 1.75rem;
+}
+
+.vw-barra {
+	width: 50%;
+}
+
+.info-text {
+	font-size: 2rem;
+}
+
+.cotizador {
+	margin: 0.5rem 0.5rem 0.5rem 0;
+	color: #ffffff;
+}
+
+.cotizador-seccion1 {
+	background-color: #ae1351;
+	display: flex;
+	padding: 1.5rem;
+	justify-content: space-around;
+}
+
+img {
+	max-width: 100%;
+	width: 100%;
+}
+
+.cotizador-seccion1-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 3rem;
+	width: 25%;
+}
+
+.cotizador-seccion2 {
+	background-color: #8f1042;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	box-shadow: inset 0 1rem 1rem rgb(0 0 0 / 30%);
+	padding: 1.5rem;
+}
+
+.cotizador-seccion2-botones,
+.cotizador-seccion3-botones,
+.cotizador-seccion4-botones {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 1rem;
+}
+
+.cotizador-seccion2-boton1,
+.cotizador-seccion2-boton2,
+.cotizador-seccion3-boton1,
+.cotizador-seccion3-boton2,
+.cotizador-seccion4-boton1,
+.cotizador-seccion4-boton2 {
+	padding: 1rem;
+}
+
+.submit,
+.reset {
+	width: 2rem;
+	height: 2rem;
+	display: block;
+	margin: auto;
+}
+
+.button-text {
+	font-size: 1.25rem;
+}
+
+.cotizador-seccion3 {
+	background-color: #6e0b30;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	box-shadow: inset 0 1rem 1rem rgb(0 0 0 / 30%);
+	padding: 1.25rem 0;
+	padding-right: 6rem;
+}
+
+.cotizador-seccion4 {
+	background-color: #490319;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	box-shadow: inset 0 1rem 1rem rgb(0 0 0 / 30%);
+	padding: 1.25rem 0;
+	padding-right: 6rem;
+}
+
+.inner-form-group {
+	display: flex;
+	flex-direction: column;
+	padding: 0.5rem 1rem;
+	position: relative;
+	width: 100%;
+}
+
+.label-input {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	font-size: 1.45rem;
+}
+
+.checkbox-container .inner-form-group label {
+	padding: 0 1.5rem;
+}
+
+.inner-form-group label {
+	padding: 0 1.5rem 0 0;
+}
+
+.form-element {
+	background: #ffffff;
+	border-radius: 0.5rem;
+	border: 0.1rem solid #bdbdbd;
+	cursor: pointer;
+	height: 3rem;
+	width: 8.5rem;
+	font-size: 1.2rem;
+}
+
+.form-element:focus {
+	outline: none;
+	box-shadow: 0 0 0 0.4rem #e0e0e0;
+}
+
+.checkbox-element {
+	background: #ffffff;
+	border-radius: 0.75rem;
+	border: 0.1rem solid #bdbdbd;
+	cursor: pointer;
+	height: 1.5rem;
+	width: 2rem;
+}
+
+.desactivado {
+	background: #c6c6c6;
+}
+
+.hide {
+	display: none;
+}
+
+.checkbox-container {
+	display: flex;
+	justify-content: flex-end;
+	padding: 0.5rem 1rem;
+}
+
+.checkbox-container .inner-form-group {
+	width: auto;
+	padding: 0;
+}
+
+span {
+	color: #c62828;
+	font-size: 1rem;
+	position: absolute;
+	right: 1.5rem;
+	top: -0.5rem;
+}
+
+.warning {
+	border: 0.2rem solid #fbc02d;
+}
+
+.warning-span {
+	color: #fbc02d;
+}
+
+.invalid {
+	border: 0.2rem solid #c62828;
+}
+
+@media (min-width: 1920px) {
+	html {
+		font-size: 9px;
+	}
+	.especificaciones {
+		padding-bottom: 1.2rem;
+	}
+}
+
+@media (min-width: 2560px) {
+	html {
+		font-size: 12px;
+	}
+	.especificaciones {
+		padding-bottom: 1.5rem;
+	}
+}
